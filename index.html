@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="form-div">
+         <form id="form">
+            <label for="name">Product Name:</label> <input type="text" name="product_name" id="name">
+            <label for="Quantity">Quantity in Stock</label> <input type="number" name="quantity" id="quantity">
+            <label for="price">Price per Item</label> <input type="number" name="price" id="price">
+
+            <input type="submit" value="submit" >
+
+         </form>
+     </div>
+
+     <div class="display">
+            <div class="heading"><span>ITEMS</span></div>
+             <div class="items">
+            
+                
+<table id="table">
+    <tr>
+      <th>Product Name</th>
+      <th>Quantity in Stock</th>
+      <th>Price per Item</th>
+    </tr>
+   
+  </table>
+             </div>
+    </div>
+ <script src="app.js"></script>
+</body>
+</html>
