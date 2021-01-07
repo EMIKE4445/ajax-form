@@ -5,11 +5,13 @@ if(isset($_POST['name']) && isset($_POST['quantity']) && isset($_POST['price']))
     $name = $_POST['name'];
     $price = $_POST['price'];
     $quantity = $_POST['quantity'];
+    $posted_time= date('m/d/y h:m:s',time());
 
     $item=[
         'name' => $name,
         'price' => $price,
-        'quantity'=> $quantity
+        'quantity'=> $quantity,
+        'time' => $posted_time
     ];
     
     
